@@ -1,6 +1,3 @@
-#code for aoc21
-#1819819-20211204-da7d2d88
-
 with open('data.txt') as data:
     lines = data.readlines()
 
@@ -10,11 +7,16 @@ for i in lines:
     new = i.replace("\n","")
     newlist.append(int(new))
 
-#print(newlist)
+three=[]
+for i in range(2,len(newlist)):
+    total = newlist[i] + newlist[i-1] + newlist[i-2]
+    three.append(total)
+
+print(three)
 
 count = 0
-for i in range(1, len(newlist)):
-    if newlist[i] > newlist[i-1]:
+for i in range(1, len(three)):
+    if three[i] > three[i-1]:
         count = count + 1
 
 print(count)
