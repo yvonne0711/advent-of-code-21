@@ -28,9 +28,12 @@ for sublist in finallist:
     #print(sublist[0])
     if sublist[0] == 'forward':
         x=x+int(sublist[1])
+        y=y+(int(aim)*int(sublist[1]))
     elif sublist[0] == 'down':
-        y=y+int(sublist[1])
+        aim=aim+int(sublist[1])
+        #y=y+int(sublist[1])
     elif sublist[0] == 'up':
-        y=y-int(sublist[1])
+        aim=aim-int(sublist[1])
+        #y=y-int(sublist[1])
 
 print(x*y)
