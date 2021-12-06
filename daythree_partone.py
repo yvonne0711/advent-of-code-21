@@ -3,6 +3,17 @@ with open('data3.txt') as data3:
 
 print(lines)
 
+newlist = []
+
+for i in lines:
+    new = i.replace("\n","")
+    newlist.append(new)
+
+print(newlist)
+
+for i in newlist:
+
+
 # gamma
 # epsilon
 # pc = gamma*epsilon
