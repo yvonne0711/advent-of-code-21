@@ -5,14 +5,32 @@ print(lines)
 
 newlist = []
 
-for i in lines:
-    new = i.replace("\n","")
-    newlist.append(new)
+for i in lines :
+    new = i.replace('\n','')
+    bit = list(str(new))
+    newlist.append(bit)
+
+# for i in lines:
+#     new = i.replace("\n","")
+#     newlist.append(new)
+#
+# print(newlist)
+# secondlist=[]
+
+# for i in newlist:
+#     bit = list(i)
+#     secondlist.append(bit)
 
 print(newlist)
 
-for i in newlist:
-
+# for binary line in newlist:
+#    for every x entry:
+#        if x entry = '0':
+#              zero count add 1
+#         if x entry = '1':
+#               one count add 1
+#    if zero count > one count:
+#          gamma.binary.append('0')
 
 # gamma
 # epsilon
