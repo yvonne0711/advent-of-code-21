@@ -23,6 +23,41 @@ for i in lines :
 
 print(newlist)
 
+gamma=[]
+zero_count=0
+one_count=0
+binary_length=len(newlist[0])
+
+for i in range(0,binary_length):
+    for sublist in newlist:
+        if sublist[i] == '0':
+            zero_count = zero_count+1
+        elif sublist[i] == '1':
+             one_count = one_count+1
+    if zero_count > one_count:
+        gamma.append('0')
+    else:
+        gamma.append('1')
+    print(zero_count,one_count)
+    zero_count=0
+    one_count=0
+
+print(gamma)
+
+epsilon=[]
+for i in gamma:
+    if i=='1':
+        epsilon.append('0')
+    else:
+        epsilon.append('1')
+print(epsilon)
+
+
+
+# print(zero_count)
+# print(one_count)
+        # print(sublist)
+#print(x)
 # for binary line in newlist:
 #    for every x entry:
 #        if x entry = '0':
